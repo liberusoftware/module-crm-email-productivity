@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Liberu\CRM\EmailProductivity\Http\Controllers;
 
-use App\Services\EmailTrackingService;
+
+use Illuminate\Routing\Controller;
+use Liberu\CRM\EmailProductivity\Services\EmailTrackingService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;

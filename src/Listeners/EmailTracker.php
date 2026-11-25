@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Listeners;
+namespace Liberu\CRM\EmailProductivity\Listeners;
 
-use App\Models\EmailCampaign;
-use App\Models\Lead;
+use Liberu\CRM\EmailMarketing\Models\EmailCampaign;
+use Liberu\CRM\LeadCapture\Models\Lead;
 use Illuminate\Mail\Events\MessageSent;
 
 class EmailTracker

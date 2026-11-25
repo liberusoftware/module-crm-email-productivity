@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Jobs;
+namespace Liberu\CRM\EmailProductivity\Jobs;
 
-use App\Actions\Helpdesk\CreateTicketFromEmail;
-use App\Services\GmailService;
+use Liberu\CRM\ServiceAgent\Actions\Helpdesk\CreateTicketFromEmail;
+use Liberu\CRM\EmailProductivity\Services\GmailService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

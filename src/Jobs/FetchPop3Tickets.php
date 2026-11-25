@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Jobs;
+namespace Liberu\CRM\EmailProductivity\Jobs;
 
-use App\Actions\Helpdesk\CreateTicketFromEmail;
-use App\Models\OAuthConfiguration;
-use App\Services\Pop3Service;
+use Liberu\CRM\ServiceAgent\Actions\Helpdesk\CreateTicketFromEmail;
+use Liberu\Foundation\Integrations\Models\OAuthConfiguration;
+use Liberu\CRM\EmailProductivity\Services\Pop3Service;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

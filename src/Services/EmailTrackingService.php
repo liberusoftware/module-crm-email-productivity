@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services;
+namespace Liberu\CRM\EmailProductivity\Services;
 
-use App\Models\Contact;
-use App\Models\Email;
-use App\Models\EmailTracking;
+use Liberu\CRM\Core\Models\CrmContact as Contact;
+use Liberu\CRM\EmailProductivity\Models\Email;
+use Liberu\CRM\EmailProductivity\Models\EmailTracking;
 use Illuminate\Support\Str;
 
 class EmailTrackingService

@@ -1,14 +1,23 @@
 <?php
 
-namespace App\Models;
+namespace Liberu\CRM\EmailProductivity\Models;
 
-use App\Traits\IsTenantModel;
+
+use App\Models\User;
+use Liberu\Foundation\Organizations\Traits\IsTenantModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class EmailTemplate extends Model
+class MailTemplate extends Model
 {
+    protected $table = 'email_templates';
+
+
+    public function getForeignKey(): string
+    {
+        return 'email_template_id';
+    }
     use HasFactory, IsTenantModel;
 
     protected $fillable = [
